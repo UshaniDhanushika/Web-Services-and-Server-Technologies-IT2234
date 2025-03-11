@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/c2388c0f-6e1c-434c-8fd0-7631154e6f66)# 2021/03/10 Day 01 Practicals
+# 2021/03/10 Day 01 Practicals
 
 Output Screenshots
 
