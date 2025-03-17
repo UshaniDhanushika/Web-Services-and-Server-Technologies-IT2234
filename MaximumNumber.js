@@ -1,6 +1,6 @@
 //Find the Maximum number in the array using foreach
 
-console.log("Maximum number in the array:")
+console.log("The array is:")
 
 let numberArray = [23, 45, 36, 85, 14]
 
