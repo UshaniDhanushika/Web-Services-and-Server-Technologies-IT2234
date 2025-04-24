@@ -16,7 +16,7 @@
 ![2.png](./Outputs/2.png)
 
 
-## Quaries 
+## Queries 
 
 1. First Open MongoDB shell
    
