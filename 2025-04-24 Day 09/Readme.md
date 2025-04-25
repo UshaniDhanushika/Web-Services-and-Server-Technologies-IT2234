@@ -37,10 +37,10 @@
 |🔹 Add Multiple data|![12.png](./Outputs/12.png)|![13.png](./Outputs/13.png)| 
 | | |![14.png](./Outputs/14.png)| 
 |✅Find a document using MongoDB Command Shell|db.Students.find({"gender":"Male"})|![15.png](./Outputs/15.png) | 
-|✅Using findOne to find a specific document<br>🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹<br>In here display only first one|db.students.findOne({"gender":"Female"})|![16.png](./Outputs/16.png)|
+|✅Using findOne to find a specific document<br>🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹<br>In here display only first one|db.Students.findOne({"gender":"Female"})|![16.png](./Outputs/16.png)|
 |✅Greater than, less than, equal, not equal| | |
-|🔹 Using MongoDB Shell|db.students.find({"age":{$gt:23}})|![17.png](./Outputs/17.png)|
-| |db.students.find({"age":{$lt:24}})|![18.png](./Outputs/18.png)|
+|🔹 Using MongoDB Shell|db.Students.find({"age":{$gt:23}})|![17.png](./Outputs/17.png)|
+| |db.Students.find({"age":{$lt:24}})|![18.png](./Outputs/18.png)|
 | |db.Students.find({"name":{$eq:"Sasha"}})|![19.png](./Outputs/19.png)|
 | |db.Students.find({"gender":{$ne:"Female"}})|![20.png](./Outputs/20.png)|
 |🔹 Using Compass|{"age":{$gt:23}}|![21.png](./Outputs/21.png)|
