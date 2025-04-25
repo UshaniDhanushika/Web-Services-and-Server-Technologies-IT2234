@@ -47,4 +47,10 @@
 | |{"age":{$lt:24}}|![22.png](./Outputs/22.png)|
 | |{"name":{$eq:"Sasha"}}|![23.png](./Outputs/23.png)|
 | |{"gender":{$ne:"Female"}}|![24.png](./Outputs/24.png)|
-
+|✅Find a document that has JS skills|db.Students.find({skills:{$in:['JS']}})|![25.png](./Outputs/25.png)|
+|✅Find a document that has MongoDB or PHP|db.Students.find({"skills":{$in:['MongoDB','PHP']}})|![26.png](./Outputs/26.png)|
+|✅Find a document without mondoDB or VS skills|db.Students.find({"skills":{$nin:['Node','VS']}})|![27.png](./Outputs/27.png)|
+|✅Sort data using options|{gpa:1}  -> Acending order<br>{gpa:1}  -> Decending Order| |
+|🔹Sort data using Shell|db.Students.find().sort({'gpa':1})<br>🔹🔹Acending order|![28.png](./Outputs/28.png)|
+| |db.Students.find().sort({'age':-1})<br>🔹🔹Decending order|![29.png](./Outputs/29.png)|
+| |db.Students.find({skills:{$in:['VS']}}).sort({'gpa':1})|![30.png](./Outputs/30.png)|
