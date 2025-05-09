@@ -77,4 +77,45 @@ connection name -->  thriple dots ---> refresh database ---> collection will be 
 
 ![Delete_Document.png](./Outputs/5_7.png) 
 
+# 🍃🍃 Display data🍃🍃
+
+## ✅Display data using Projection 
+
+ Query: **db.degree.find().projection(['name','duration'])**
+
+![Find_Data.png](./Outputs/6_1.png) 
+
+## ✅Display only specified field data
+
+Query: **db.degree.find({},{name:1,_id:0}).pretty()** ---> display name only
+
+![Find_Data.png](./Outputs/6_2.png) 
+
+## ✅Find specific data using ID
+
+Query: **db.Degree.find({_id:ObjectId('681dc48ddc9fab8bb7984180')})** 
+
+![Find_Data.png](./Outputs/6_3.png) 
+
+# 🍃🍃 Delete data🍃🍃
+
+## ✅Delete specific data
+
+Delete degrees that has less than 4 years duration
+Query: **db.Degree.deleteMany({duration:{$lt:4}})** 
+
+![Find_Data.png](./Outputs/6_4.png) 
+![Find_Data.png](./Outputs/6_5.png) 
+
+# 🍃🍃 Update data🍃🍃
+
+Query: **db.degree.updateOne({_id:ObjectId('681dc48ddc9fab8bb798417f')},{$set:{name:'Information Technology',duration:3}})** 
+
+🔹Before Update:
+![Update_data.png](./Outputs/6_6.png) 
+
+🔹After Update:
+![Update_data.png](./Outputs/6_7.png) 
+![Update_data.png](./Outputs/6_8.png) 
+
 
