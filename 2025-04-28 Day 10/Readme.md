@@ -44,8 +44,8 @@ connection name -->  thriple dots ---> refresh database ---> collection will be 
 <br>
 ( If there is one collection database, also delete )
 
- ![Drop_Database.png](./Outputs/4_2.png) 
- ![Drop_Database.png](./Outputs/4_3.png)
+ ![Drop_Collection.png](./Outputs/4_2.png) 
+ ![Drop_Collection.png](./Outputs/4_3.png)
 
 
 # 🍃🍃 Delete a document 🍃🍃
@@ -56,10 +56,25 @@ connection name -->  thriple dots ---> refresh database ---> collection will be 
 
 1. First, insert data
 
- ![Drop_Database.png](./Outputs/5_1.png) 
- ![Drop_Database.png](./Outputs/5_2.png)
+ ![Delete_Document.png](./Outputs/5_1.png) 
+ ![Delete_Document.png](./Outputs/5_2.png)
+ ![Delete_Document.png](./Outputs/5_3.png)
+
+2. Open MongoDB Shell
+3. Use database
+4. Query: **db.degree.deleteOne({_id: ObjectId('680ee96490ac2594c5f78aa3')})**
+(db.collection_name.deleteOne({_id: ObjectId('Id of the data you want to delete')})
+
+ ![Drop_Database.png](./Outputs/5_4.png) 
+
+5. Go to the collection and refresh documents
+
+ ![Drop_Database.png](./Outputs/5_5.png) 
+ ![Drop_Database.png](./Outputs/5_6.png) 
+
+ 
+## ✅ Delete a document using MongoDB Compass
+
+![Delete_Document.png](./Outputs/5_7.png) 
 
 
-   
-3. Use the database 
-4. Query : **db.degree.drop()**
