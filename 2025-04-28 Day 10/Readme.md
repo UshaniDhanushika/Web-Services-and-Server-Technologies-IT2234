@@ -4,7 +4,7 @@
 
 ## ✅ Drop Database Using MongoDB Compass
 
-![Drop_Database.png](./Outputs/1.1.png)
+![Drop_Database.png](./Outputs/1_1.png)
 
 ## ✅ Drop Database Using MongoDB Shell
 
