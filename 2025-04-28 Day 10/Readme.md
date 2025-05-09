@@ -114,9 +114,13 @@ Query: **db.Degree.deleteMany({duration:{$lt:4}})**
 Query: **db.degree.updateOne({_id:ObjectId('681dc48ddc9fab8bb798417f')},{$set:{name:'Information Technology',duration:3}})** 
 
 🔹Before Update:
+
+
 ![Update_data.png](./Outputs/6_6.png) 
 
 🔹After Update:
+
+
 ![Update_data.png](./Outputs/6_7.png) 
 ![Update_data.png](./Outputs/6_8.png) 
 
@@ -126,9 +130,13 @@ Query: **db.degree.updateOne({_id:ObjectId('681dc48ddc9fab8bb798417f')},{$set:{n
 Query: **db.Degree.updateMany({duration:{$eq:3}},{$inc:{duration:1}})** 
 
 🔹Before Update:
+
+
 ![Update_data.png](./Outputs/7_1.png) 
 
 🔹After Update:
+
+
 ![Update_data.png](./Outputs/7_2.png) 
 ![Update_data.png](./Outputs/7_3.png) 
 
