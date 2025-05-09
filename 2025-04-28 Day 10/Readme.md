@@ -61,7 +61,7 @@ connection name -->  thriple dots ---> refresh database ---> collection will be 
  ![Delete_Document.png](./Outputs/5_3.png)
 
 2. Open MongoDB Shell
-3. Use database
+3. Use the database
 4. Query: **db.degree.deleteOne({_id: ObjectId('680ee96490ac2594c5f78aa3')})**
 (db.collection_name.deleteOne({_id: ObjectId('Id of the data you want to delete')})
 
@@ -109,6 +109,8 @@ Query: **db.Degree.deleteMany({duration:{$lt:4}})**
 
 # 🍃🍃 Update data🍃🍃
 
+## ✅Update One 
+
 Query: **db.degree.updateOne({_id:ObjectId('681dc48ddc9fab8bb798417f')},{$set:{name:'Information Technology',duration:3}})** 
 
 🔹Before Update:
@@ -117,5 +119,17 @@ Query: **db.degree.updateOne({_id:ObjectId('681dc48ddc9fab8bb798417f')},{$set:{n
 🔹After Update:
 ![Update_data.png](./Outputs/6_7.png) 
 ![Update_data.png](./Outputs/6_8.png) 
+
+
+## ✅Update Many
+
+Query: **db.Degree.updateMany({duration:{$eq:3}},{$inc:{duration:1}})** 
+
+🔹Before Update:
+![Update_data.png](./Outputs/7_1.png) 
+
+🔹After Update:
+![Update_data.png](./Outputs/7_2.png) 
+![Update_data.png](./Outputs/7_3.png) 
 
 
